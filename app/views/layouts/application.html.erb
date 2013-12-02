@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cheam Croquet & Bowl Club Website</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" type="text/css" href="stylesheets/application.css">  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="header">
+    <%= render 'layouts/header' %>
+    </div>
+    
+    <img src="/images/Cheam.png" id="company-logo" />
+    <%= render 'layouts/navigation' %>
+    
+    <div id="content">
+    
+<%= yield %>
+
+    </div>
+      
+      <div id="footer">
+      
+      <%= render 'layouts/footer' %>
+      
+    </div>
+  </div>     
+      
+</body>
+</html>

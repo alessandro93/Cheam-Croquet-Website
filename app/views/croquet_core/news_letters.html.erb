@@ -1,0 +1,19 @@
+<article id="newsletters">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Download Link</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%= @newsletter.each do |newsletter| %>
+      <tr>
+        <td> <%= newsletter.name %> </td>
+        <td> <%= link_to "Download Newsletter", newsletter.attachment_url %> </td>     
+     </tr>
+    <% end %>     
+   </tbody>
+  </table> 
+</article>

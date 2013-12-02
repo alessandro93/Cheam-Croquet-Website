@@ -1,0 +1,21 @@
+<article id="programme">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Description</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+     <%= @all_events.each do |all_events| %> 
+      <tr>
+        <td><%= all_events.title %></td>
+        <td><%= all_events.date %></td>
+        <td><%= all_events.description %></td>
+      </tr>
+     <% end %>
+    </tbody>
+  </table>
+</article>
